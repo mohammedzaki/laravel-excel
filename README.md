@@ -18,7 +18,7 @@ Made with :heart: by [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)
 ## Installation
 Use composer to download the package:
 ```
-composer require cyber-duck/laravel-excel
+composer require mohammed-zaki/laravel-excel
 ```
 
 Register the service provider in `config/app.php` adding *Cyberduck\LaravelExcel\ExcelServiceProvider* to the provider array.
