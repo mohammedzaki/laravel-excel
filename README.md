@@ -8,9 +8,8 @@ With multiple Sheets support
 It's based on [box/spout](https://github.com/box/spout).
 
 Author: [Simone Todaro](https://github.com/SimoTod)  
-Contributors: [Clément Blanco](https://github.com/Claymm), [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)
-
-Made with :heart: by [Mohammed Zaki](mohammedzaki.dev@gmail.com)
+Contributors: [Clément Blanco](https://github.com/Claymm), [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)  
+Made with :heart: by [Mohammed Zaki](mohammedzaki.dev@gmail.com)  
 
 [Installation](#installation)  
 [Export Excel](#export-excel)  
