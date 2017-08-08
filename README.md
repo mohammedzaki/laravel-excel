@@ -13,6 +13,7 @@ Made with :heart: by [Mohammed Zaki](mohammedzaki.dev@gmail.com)
 
 [Installation](#installation)  
 [Export Excel](#export-excel)  
+[Export Excel with multiple sheets](#export-excel-with-multiple-sheets)
 [Import Excel](#import-excel)  
 [Different formats](#different-formats)  
 
@@ -55,6 +56,7 @@ $excel->loadQuery($query);
 return $excel->stream($yourFileName);
 ```
 
+### Export Excel with multiple sheets
 The exporter class supports Multiple Sheets as follow 
 ```
 $excel = Exporter::make('Excel');
