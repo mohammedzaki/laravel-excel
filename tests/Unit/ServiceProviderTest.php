@@ -5,15 +5,15 @@ class ExcelServiceProviderTest extends TestCase
     public function test_service_provider()
     {
         //Test services
-        $this->assertTrue($this->app->bound('cyber-duck/exporter'));
-        $this->assertTrue($this->app->bound('cyber-duck/importer'));
+        $this->assertTrue($this->app->bound('mohammedzaki/exporter'));
+        $this->assertTrue($this->app->bound('mohammedzaki/importer'));
         $this->assertInstanceOf(
             \CyberduckWithSheets\LaravelExcel\Factory\ExporterFactory::class,
-            $this->app->make('cyber-duck/exporter')
+            $this->app->make('mohammedzaki/exporter')
         );
         $this->assertInstanceOf(
             \CyberduckWithSheets\LaravelExcel\Factory\ImporterFactory::class,
-            $this->app->make('cyber-duck/importer')
+            $this->app->make('mohammedzaki/importer')
         );
         //Test aliases
         $this->assertInstanceOf(
