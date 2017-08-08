@@ -18,10 +18,10 @@ class ExcelServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('cyber-duck/exporter', function () {
+        $this->app->singleton('mohammed-zaki/exporter', function () {
             return new ExporterFactory();
         });
-        $this->app->singleton('cyber-duck/importer', function () {
+        $this->app->singleton('mohammed-zaki/importer', function () {
             return new ImporterFactory();
         });
     }
