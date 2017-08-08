@@ -1,11 +1,11 @@
 <?php
-namespace Cyberduck\LaravelExcel\Importer;
+namespace CyberduckWithSheets\LaravelExcel\Importer;
 
 use Box\Spout\Reader\ReaderFactory;
 use Illuminate\Database\Eloquent\Model;
-use Cyberduck\LaravelExcel\Parser\BasicParser;
-use Cyberduck\LaravelExcel\Contract\ParserInterface;
-use Cyberduck\LaravelExcel\Contract\ImporterInterface;
+use CyberduckWithSheets\LaravelExcel\Parser\BasicParser;
+use CyberduckWithSheets\LaravelExcel\Contract\ParserInterface;
+use CyberduckWithSheets\LaravelExcel\Contract\ImporterInterface;
 
 abstract class AbstractSpreadsheet implements ImporterInterface
 {

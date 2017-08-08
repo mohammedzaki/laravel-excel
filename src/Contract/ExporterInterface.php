@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel\Contract;
+namespace CyberduckWithSheets\LaravelExcel\Contract;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Query\Builder;

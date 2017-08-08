@@ -27,7 +27,7 @@ class TestCase extends BaseTestCase
     public function createApplication()
     {
         $app = require __DIR__.'/../vendor/laravel/laravel/bootstrap/app.php';
-        $app->register('Cyberduck\LaravelExcel\ExcelServiceProvider');
+        $app->register('CyberduckWithSheets\LaravelExcel\ExcelServiceProvider');
 
         $app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
 

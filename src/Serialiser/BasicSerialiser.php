@@ -1,13 +1,13 @@
 <?php
-namespace Cyberduck\LaravelExcel\Serialiser;
+
+namespace CyberduckWithSheets\LaravelExcel\Serialiser;
 
 use Illuminate\Database\Eloquent\Model;
-use Cyberduck\LaravelExcel\Contract\SerialiserInterface;
+use CyberduckWithSheets\LaravelExcel\Contract\SerialiserInterface;
 
-class BasicSerialiser implements SerialiserInterface
-{
-    public function getData($data)
-    {
+class BasicSerialiser implements SerialiserInterface {
+
+    public function getData($data) {
         if ($data instanceof Model) {
             return $data->toArray();
         } elseif (is_array($data)) {
@@ -17,8 +17,8 @@ class BasicSerialiser implements SerialiserInterface
         }
     }
 
-    public function getHeaderRow()
-    {
+    public function getHeaderRow() {
         return [];
     }
+
 }

@@ -21,9 +21,9 @@ Use composer to download the package:
 composer require mohammed-zaki/laravel-excel
 ```
 
-Register the service provider in `config/app.php` adding *Cyberduck\LaravelExcel\ExcelServiceProvider* to the provider array.
+Register the service provider in `config/app.php` adding *CyberduckWithSheets\LaravelExcel\ExcelServiceProvider* to the provider array.
 
-Note. If you are on Laravel 4, use *Cyberduck\LaravelExcel\ExcelLegacyServiceProvider*
+Note. If you are on Laravel 4, use *CyberduckWithSheets\LaravelExcel\ExcelLegacyServiceProvider*
 
 ## Export Excel
 
@@ -73,7 +73,7 @@ return $excel->save($yourFileNameWithPath);
 By default, every element of the Collection becomes a row and every unprotected field of the Model becomes a cell.  
 No headers row is printed.
 
-To change this behaviour, create a class extending *Cyberduck\LaravelExcel\Contract\SerialiserInterface*, implement the methods *getHeaderRow()* and *getData(Model $data)* and set this class on the excel object usint *setSerialiser()*.
+To change this behaviour, create a class extending *CyberduckWithSheets\LaravelExcel\Contract\SerialiserInterface*, implement the methods *getHeaderRow()* and *getData(Model $data)* and set this class on the excel object usint *setSerialiser()*.
 ```
 $serialiser = new CustomSerialiser();
 $excel = Exporter::make('Excel');
@@ -90,7 +90,7 @@ Example
 namespace App\Serialisers;
 
 use Illuminate\Database\Eloquent\Model;
-use Cyberduck\LaravelExcel\Contract\SerialiserInterface;
+use CyberduckWithSheets\LaravelExcel\Contract\SerialiserInterface;
 
 class ExampleSerialiser implements SerialiserInterface
 {
@@ -146,14 +146,14 @@ $collection = $excel->getCollection();
 //dd($collection)
 ```
 
-To import each row in an Eloquent model, create a class extending *Cyberduck\LaravelExcel\Contract\ParserInterface* and implement the methods *transform($row)*.  
+To import each row in an Eloquent model, create a class extending *CyberduckWithSheets\LaravelExcel\Contract\ParserInterface* and implement the methods *transform($row)*.  
 
 Example
 ```
 namespace App\Parsers;
 
 use App\Models\YourModel;
-use Cyberduck\LaravelExcel\Contract\ParserInterface;
+use CyberduckWithSheets\LaravelExcel\Contract\ParserInterface;
 
 class ExampleSerialiser implements ParserInterface
 {

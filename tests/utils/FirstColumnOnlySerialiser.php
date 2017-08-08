@@ -1,17 +1,17 @@
 <?php
 
-use Cyberduck\LaravelExcel\Contract\SerialiserInterface;
+use CyberduckWithSheets\LaravelExcel\Contract\SerialiserInterface;
+use Illuminate\Database\Eloquent\Model;
 
-class FirstColumnOnlySerialiser implements SerialiserInterface
-{
-    public function getData($data)
-    {
+class FirstColumnOnlySerialiser implements SerialiserInterface {
+
+    public function getData($data) {
         $arrayValues = $data->toArray();
         return [$arrayValues['field1']];
     }
 
-    public function getHeaderRow()
-    {
+    public function getHeaderRow() {
         return ['HEADER'];
     }
+
 }

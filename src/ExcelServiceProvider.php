@@ -1,8 +1,8 @@
 <?php
-namespace Cyberduck\LaravelExcel;
+namespace CyberduckWithSheets\LaravelExcel;
 
-use Cyberduck\LaravelExcel\Factory\ExporterFactory;
-use Cyberduck\LaravelExcel\Factory\ImporterFactory;
+use CyberduckWithSheets\LaravelExcel\Factory\ExporterFactory;
+use CyberduckWithSheets\LaravelExcel\Factory\ImporterFactory;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
@@ -12,8 +12,8 @@ class ExcelServiceProvider extends ServiceProvider
     public function boot()
     {
         $loader = AliasLoader::getInstance();
-        $loader->alias('Exporter', \Cyberduck\LaravelExcel\ExporterFacade::class);
-        $loader->alias('Importer', \Cyberduck\LaravelExcel\ImporterFacade::class);
+        $loader->alias('Exporter', \CyberduckWithSheets\LaravelExcel\ExporterFacade::class);
+        $loader->alias('Importer', \CyberduckWithSheets\LaravelExcel\ImporterFacade::class);
     }
 
     public function register()

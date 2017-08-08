@@ -1,8 +1,12 @@
 <?php
-namespace Cyberduck\LaravelExcel\Contract;
 
-interface SerialiserInterface
-{
+namespace CyberduckWithSheets\LaravelExcel\Contract;
+
+use Illuminate\Database\Eloquent\Model;
+
+interface SerialiserInterface {
+
     public function getData($data);
+
     public function getHeaderRow();
 }

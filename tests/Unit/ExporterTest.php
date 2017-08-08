@@ -1,7 +1,7 @@
 <?php
 use Box\Spout\Common\Type;
 use Box\Spout\Reader\ReaderFactory;
-use Cyberduck\LaravelExcel\Factory\ImporterFactory;
+use CyberduckWithSheets\LaravelExcel\Factory\ImporterFactory;
 
 class ExporterTest extends TestCase
 {

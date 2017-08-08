@@ -1,12 +1,12 @@
 <?php
-namespace Cyberduck\LaravelExcel\Exporter;
+namespace CyberduckWithSheets\LaravelExcel\Exporter;
 
 use Illuminate\Support\Collection;
 use Box\Spout\Writer\WriterFactory;
 use Illuminate\Database\Query\Builder;
-use Cyberduck\LaravelExcel\Serialiser\BasicSerialiser;
-use Cyberduck\LaravelExcel\Contract\SerialiserInterface;
-use Cyberduck\LaravelExcel\Contract\ExporterInterface;
+use CyberduckWithSheets\LaravelExcel\Serialiser\BasicSerialiser;
+use CyberduckWithSheets\LaravelExcel\Contract\SerialiserInterface;
+use CyberduckWithSheets\LaravelExcel\Contract\ExporterInterface;
 
 abstract class AbstractSpreadsheet implements ExporterInterface
 {

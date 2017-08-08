@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel\Importer;
+namespace CyberduckWithSheets\LaravelExcel\Importer;
 
 use Box\Spout\Common\Type;
 

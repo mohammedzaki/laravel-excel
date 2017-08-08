@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel\Exporter;
+namespace CyberduckWithSheets\LaravelExcel\Exporter;
 
 use Box\Spout\Common\Type;
 
