@@ -7,6 +7,6 @@ class ExporterFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'mohammedzaki/exporter';
+        return 'mohammed-zaki/exporter';
     }
 }
