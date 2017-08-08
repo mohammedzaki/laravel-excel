@@ -7,6 +7,6 @@ class ImporterFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'mohammed-zaki/importer';
+        return 'cyber-duck/importer';
     }
 }

@@ -18,10 +18,10 @@ class ExcelLegacyServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('mohammed-zaki/exporter', function () {
+        $this->app->bind('cyber-duck/exporter', function () {
             return new ExporterFactory();
         });
-        $this->app->bind('mohammed-zaki/importer', function () {
+        $this->app->bind('cyber-duck/importer', function () {
             return new ImporterFactory();
         });
     }
