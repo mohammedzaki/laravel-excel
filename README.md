@@ -1,14 +1,15 @@
 # Laravel Excel
-[![Latest Stable Version](https://poser.pugx.org/cyber-duck/laravel-excel/v/stable)](https://packagist.org/packages/cyber-duck/laravel-excel)
-[![Total Downloads](https://poser.pugx.org/cyber-duck/laravel-excel/downloads)](https://packagist.org/packages/cyber-duck/laravel-excel)
-[![License](https://poser.pugx.org/cyber-duck/laravel-excel/license)](https://raw.githubusercontent.com/Cyber-Duck/laravel-excel/master/LICENSE)
+[![Latest Stable Version](https://poser.pugx.org/mohammed-zaki/laravel-excel/v/stable)](https://packagist.org/packages/mohammed-zaki/laravel-excel)
+[![Total Downloads](https://poser.pugx.org/mohammed-zaki/laravel-excel/downloads)](https://packagist.org/packages/mohammed-zaki/laravel-excel)
+[![License](https://poser.pugx.org/mohammed-zaki/laravel-excel/license)](https://raw.githubusercontent.com/Cyber-Duck/laravel-excel/master/LICENSE)
 
 Exporting and importing Excel, CSV and OpenOffice stylesheets using Eloquent Collections and Query Builders in Laravel (5.* and 4.*).  
+With multiple Sheets support 
 It's based on [box/spout](https://github.com/box/spout).
 
 Author: [Simone Todaro](https://github.com/SimoTod)  
-Contributors: [Clément Blanco](https://github.com/Claymm)  
-Made with :heart: by [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)
+Contributors: [Clément Blanco](https://github.com/Claymm), [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)
+Made with :heart: by [Mohammed Zaki](mohammedzaki.dev@gmail.com)
 
 [Installation](#installation)  
 [Export Excel](#export-excel)  
@@ -52,6 +53,15 @@ $query = DB:table('table')->select('col1','col2');
 $excel = Exporter::make('Excel');
 $excel->loadQuery($query);
 return $excel->stream($yourFileName);
+```
+
+The exporter class supports Multiple Sheets as follow 
+```
+$excel = Exporter::make('Excel');
+$excel->loadToNewSheet($yourCollection, "Sheet Name");
+$query = DB:table('table')->select('col1','col2');
+$excel->loadQueryToNewSheet($query, "Sheet Name");
+return $excel->save($yourFileName);
 ```
 
 If you deal with big tables, you can set the chunk size to minimise the memory usage
